@@ -11,5 +11,11 @@ public class SimpleChess {
 	public ModelAndView helloWorld() {
 		return new ModelAndView("welcome", "message", "test");
 	}
+	
+	
+	@RequestMapping("/chessgame")
+	public ModelAndView chess() {
+		return new ModelAndView("chessgame", "message", "test");
+	}
 
 }
